@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_selected_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        android:layout_marginEnd="5dp"
+        app:cardBackgroundColor="@color/primary_red_ten"
+        app:strokeColor="@color/primary_red">
+
+        <TextView
+            android:id="@+id/tv_selected_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="All"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/primary_red"
+            android:textSize="14sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_unselected_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        android:layout_marginEnd="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/text_black_fifty"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_unselected_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="Women's Clothing"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/text_black_fifty"
+            android:textSize="14sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

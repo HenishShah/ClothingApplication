@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_product_image"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_product_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        tools:text="Crochet Shirt"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/siv_product_image"
+        app:layout_constraintTop_toTopOf="@id/siv_product_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        tools:text="$128.99"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_title"
+        app:layout_constraintStart_toEndOf="@id/siv_product_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/lin_delete"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:background="@color/primary_red_ten"
+        app:layout_constraintBottom_toBottomOf="@id/siv_product_image"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/siv_product_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/ic_delete"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/text_black_ten"
+        app:layout_constraintTop_toBottomOf="@id/siv_product_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

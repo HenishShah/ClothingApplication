@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ClothingApplication</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="search_product">Search Product....</string>
+    <string name="sign_in">Sign In</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="continue_to_checkout">Continue to checkout</string>
+    <string name="cart">Cart</string>
+    <string name="cart_value">Cart Value</string>
+    <string name="delivery">Delivery</string>
+    <string name="total">Total</string>
+
+</resources>
